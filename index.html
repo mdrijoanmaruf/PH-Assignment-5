@@ -15,8 +15,8 @@
         }
     </style>
   </head>
-  <body class="pop">
-    <main class="bg-[#F4F7FF] min-h-screen">
+  <body class="pop bg-[#F4F7FF] ">
+    <main class="min-h-screen">
         <section class="w-[94%] md:max-w-7xl mx-auto py-4">
 
             <!-- Nav Bar -->
@@ -32,9 +32,9 @@
                         <div class="md:w-[28px] w-[20px]">
                             <img src="assets/checkbox.png" alt="">
                         </div>
-                        <p class="font-[700] text-[20px] md:text-[28px]">23</p>
+                        <p id="completedTask" class="font-[700] text-[20px] md:text-[28px]">23</p>
                     </div>
-                    <div class="w-[50px] cursor-pointer">
+                    <div id="themeChanger" class="w-[50px] cursor-pointer">
                         <img class="w-[30px] md:w-[40px]" src="assets/theme-btn.png" alt="">
                     </div>
                 </div>
@@ -43,22 +43,22 @@
             <!-- Main part -->
              <section>
                 <div>
-                    <div class="grid grid-cols-4 gap-6  mt-5 ">
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-6  mt-5 ">
 
                         <!-- Task part -->
-                        <div class="col-span-3 bg-white p-5 rounded-2xl">
-                            <div class="grid grid-cols-4 gap-4">
+                        <div class="md:col-span-3 bg-white p-5 rounded-2xl">
+                            <div class="grid md:grid-cols-4 gap-4">
                                 <div class="flex items-center gap-5 bg-[#F4F7FF] py-4 px-3 rounded-2xl">
                                     <div class="p-4 rounded-full bg-white">
                                         <img src="assets/checkbox.png" alt="">
                                     </div>
                                     <div>
                                         <p class="text-[#00303C] font-[500] text-[14px] opacity-75">Task Assigned</p>
-                                        <h2 class="font-[700] text-[28px]">05</h2>
+                                        <h2 id="taskAssigned" class="font-[700] text-[28px]">6</h2>
                                     </div>
                                 </div>
 
-                                <div class="col-span-2 bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] rounded-2xl flex items-center gap-3 p-3">
+                                <div id="toBlog" class="md:col-span-2 cursor-pointer bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] rounded-2xl flex items-center gap-3 p-3">
                                     <div>
                                         <img class="w-13" src="assets/board.png" alt="">
                                     </div>
@@ -79,16 +79,16 @@
                             </div>
 
                             <!-- 6 task -->
-                             <div class="grid grid-cols-3 gap-6 mt-8">
+                             <div class="grid md:grid-cols-3 gap-6 mt-8">
                                 <div class="bg-[#F4F7FF] rounded-2xl p-4 flex flex-col gap-4">
                                     <div>
-                                        <p class="inline-block p-1 px-2 bg-white text-[14px] font-[500] opacity-75 rounded-[8px]">ShopEase</p>
+                                        <span class="inline-block p-1 px-2 bg-white text-[14px] font-[500] opacity-75 rounded-[8px]">ShopEase</span>
                                     </div>
                                     <h2 class="text-[22px] font-[500]">
                                         Fix Mobile Button Issue 
                                     </h2>
                                     <p class="p-1 px-2 bg-white text-[14px] font-[400] opacity-75 rounded-[8px] line-clamp-2">
-                                        Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
+                                        Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly.
                                     </p>
                                     <hr class="border-dashed border-[1.2px] border-[#3752FD33]">
                                     <div class="flex justify-between">
@@ -97,7 +97,7 @@
                                             <h3 class="text-[16px] font-[500] text-[#00303C]">21 March 2025</h3>
                                         </div>
                                         <div>
-                                            <button class="px-5 py-3 bg-[#3752FD] text-white font-[500] text-[16px] rounded-[8px]">
+                                            <button class="px-5 py-2 btn bg-[#3752FD] text-white font-[500] text-[16px] cursor-pointer hover:bg-blue-800 rounded-[8px] mt-1">
                                                 Completed
                                             </button>
                                         </div>
@@ -107,13 +107,13 @@
                                 
                                 <div class="bg-[#F4F7FF] rounded-2xl p-4 flex flex-col gap-4">
                                     <div>
-                                        <p class="inline-block p-1 px-2 bg-white text-[14px] font-[500] opacity-75 rounded-[8px]">ShopEase</p>
+                                        <span class="inline-block p-1 px-2 bg-white text-[14px] font-[500] opacity-75 rounded-[8px]">CloudSync</span>
                                     </div>
                                     <h2 class="text-[22px] font-[500]">
-                                        Fix Mobile Button Issue 
+                                        Add Dark Mode
                                     </h2>
                                     <p class="p-1 px-2 bg-white text-[14px] font-[400] opacity-75 rounded-[8px] line-clamp-2">
-                                        Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
+                                        Implement Dark Mode Features by using Chrome DevTools, check for overlapping elements, and ensure onClick works properly.
                                     </p>
                                     <hr class="border-dashed border-[1.2px] border-[#3752FD33]">
                                     <div class="flex justify-between">
@@ -122,7 +122,7 @@
                                             <h3 class="text-[16px] font-[500] text-[#00303C]">21 March 2025</h3>
                                         </div>
                                         <div>
-                                            <button class="px-5 py-3 bg-[#3752FD] text-white font-[500] text-[16px] rounded-[8px]">
+                                            <button class="px-5 py-2 btn bg-[#3752FD] text-white font-[500] text-[16px] cursor-pointer hover:bg-blue-800 rounded-[8px] mt-1">
                                                 Completed
                                             </button>
                                         </div>
@@ -131,13 +131,13 @@
 
                                 <div class="bg-[#F4F7FF] rounded-2xl p-4 flex flex-col gap-4">
                                     <div>
-                                        <p class="inline-block p-1 px-2 bg-white text-[14px] font-[500] opacity-75 rounded-[8px]">ShopEase</p>
+                                        <span class="inline-block p-1 px-2 bg-white text-[14px] font-[500] opacity-75 rounded-[8px]">SwiftPay</span>
                                     </div>
                                     <h2 class="text-[22px] font-[500]">
-                                        Fix Mobile Button Issue 
+                                        Optimize  Home page 
                                     </h2>
                                     <p class="p-1 px-2 bg-white text-[14px] font-[400] opacity-75 rounded-[8px] line-clamp-2">
-                                        Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
+                                        Optimize the Home Page Features by using Chrome DevTools, check for overlapping elements.
                                     </p>
                                     <hr class="border-dashed border-[1.2px] border-[#3752FD33]">
                                     <div class="flex justify-between">
@@ -146,7 +146,7 @@
                                             <h3 class="text-[16px] font-[500] text-[#00303C]">21 March 2025</h3>
                                         </div>
                                         <div>
-                                            <button class="px-5 py-3 bg-[#3752FD] text-white font-[500] text-[16px] rounded-[8px]">
+                                            <button class="px-5 py-2 btn bg-[#3752FD] text-white font-[500] text-[16px] cursor-pointer hover:bg-blue-800 rounded-[8px] mt-1">
                                                 Completed
                                             </button>
                                         </div>
@@ -155,13 +155,13 @@
 
                                 <div class="bg-[#F4F7FF] rounded-2xl p-4 flex flex-col gap-4">
                                     <div>
-                                        <p class="inline-block p-1 px-2 bg-white text-[14px] font-[500] opacity-75 rounded-[8px]">ShopEase</p>
+                                        <span class="inline-block p-1 px-2 bg-white text-[14px] font-[500] opacity-75 rounded-[8px]">Meta</span>
                                     </div>
                                     <h2 class="text-[22px] font-[500]">
-                                        Fix Mobile Button Issue 
+                                        Add new emoji 🤲
                                     </h2>
                                     <p class="p-1 px-2 bg-white text-[14px] font-[400] opacity-75 rounded-[8px] line-clamp-2">
-                                        Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
+                                        Add new emoji by using Chrome DevTools, check for overlapping elements, and ensure onClick works properly.
                                     </p>
                                     <hr class="border-dashed border-[1.2px] border-[#3752FD33]">
                                     <div class="flex justify-between">
@@ -170,7 +170,7 @@
                                             <h3 class="text-[16px] font-[500] text-[#00303C]">21 March 2025</h3>
                                         </div>
                                         <div>
-                                            <button class="px-5 py-3 bg-[#3752FD] text-white font-[500] text-[16px] rounded-[8px]">
+                                            <button class="px-5 py-2 btn bg-[#3752FD] text-white font-[500] text-[16px] cursor-pointer hover:bg-blue-800 rounded-[8px] mt-1">
                                                 Completed
                                             </button>
                                         </div>
@@ -179,13 +179,13 @@
 
                                 <div class="bg-[#F4F7FF] rounded-2xl p-4 flex flex-col gap-4">
                                     <div>
-                                        <p class="inline-block p-1 px-2 bg-white text-[14px] font-[500] opacity-75 rounded-[8px]">ShopEase</p>
+                                        <span class="inline-block p-1 px-2 bg-white text-[14px] font-[500] opacity-75 rounded-[8px]">Google LLC</span>
                                     </div>
                                     <h2 class="text-[22px] font-[500]">
-                                        Fix Mobile Button Issue 
+                                        Integrate OpenAI API  
                                     </h2>
                                     <p class="p-1 px-2 bg-white text-[14px] font-[400] opacity-75 rounded-[8px] line-clamp-2">
-                                        Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
+                                        Open AI API have to integrate and check for overlapping elements, and ensure onClick works properly.
                                     </p>
                                     <hr class="border-dashed border-[1.2px] border-[#3752FD33]">
                                     <div class="flex justify-between">
@@ -194,7 +194,7 @@
                                             <h3 class="text-[16px] font-[500] text-[#00303C]">21 March 2025</h3>
                                         </div>
                                         <div>
-                                            <button class="px-5 py-3 bg-[#3752FD] text-white font-[500] text-[16px] rounded-[8px]">
+                                            <button class="px-5 py-2 btn bg-[#3752FD] text-white font-[500] text-[16px] cursor-pointer hover:bg-blue-800 rounded-[8px] mt-1">
                                                 Completed
                                             </button>
                                         </div>
@@ -203,13 +203,13 @@
 
                                 <div class="bg-[#F4F7FF] rounded-2xl p-4 flex flex-col gap-4">
                                     <div>
-                                        <p class="inline-block p-1 px-2 bg-white text-[14px] font-[500] opacity-75 rounded-[8px]">ShopEase</p>
+                                        <span class="inline-block p-1 px-2 bg-white text-[14px] font-[500] opacity-75 rounded-[8px]">Glassdoar</span>
                                     </div>
                                     <h2 class="text-[22px] font-[500]">
-                                        Fix Mobile Button Issue 
+                                        Improve Job searching 
                                     </h2>
                                     <p class="p-1 px-2 bg-white text-[14px] font-[400] opacity-75 rounded-[8px] line-clamp-2">
-                                        Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
+                                        Job Searching features have to improve by Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly.
                                     </p>
                                     <hr class="border-dashed border-[1.2px] border-[#3752FD33]">
                                     <div class="flex justify-between">
@@ -218,7 +218,7 @@
                                             <h3 class="text-[16px] font-[500] text-[#00303C]">21 March 2025</h3>
                                         </div>
                                         <div>
-                                            <button class="px-5 py-3 bg-[#3752FD] text-white font-[500] text-[16px] rounded-[8px]">
+                                            <button class="px-5 py-2 btn bg-[#3752FD] text-white font-[500] text-[16px] rounded-[8px]">
                                                 Completed
                                             </button>
                                         </div>
@@ -230,13 +230,33 @@
                         </div>
 
                         <!-- Activity Log -->
-                        <div class="bg-white">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, sapiente? Dolores quod doloremque adipisci exercitationem ipsa ipsam dolorum voluptatibus amet sed sint qui repellat, vel, expedita minima veritatis aliquid possimus?
+                        <div class="bg-white rounded-xl">
+                            <div class="flex flex-col justify-center items-center gap-4">
+                                <div class="flex justify-center items-center mt-4 gap-4">
+                                    <img src="assets/activity.png" alt="">
+                                    <p class="font-[500] text-[18px] text-[#00303C] opacity-80">Activity Log</p>
+                                </div>
+                                <div>
+                                    <button id="clearHistory" class="px-5 py-2 cursor-pointer bg-[#3752FD] text-white font-[400] text-[16px] rounded-[8px] mt-1 c">
+                                        Clear History
+                                    </button>
+                                </div>
+                            </div>
+                            <hr class="border-gray-400 border-dashed mt-4">
+
+                            <!-- History -->
+                            <div id="history" class="min-h-12">
+                                <!-- <p id="noHistory" class="text-center mt-4 font-semibold text-red-300">No History Available at this time.</p> -->
+                            </div>
                         </div>
                     </div>
                 </div>
              </section>
         </section>
     </main>
+    <script src="JS/themeChanger.js"></script>
+    <script src="JS/blogPage.js"></script>
+    <script src="JS/clearHistory.js"></script>
+    <script src="JS/buttonClick.js"></script>
   </body>
 </html>

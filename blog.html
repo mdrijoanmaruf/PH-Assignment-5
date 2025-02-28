@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Dev Board</title>
+    <style>
+        .pop{
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+  </head>
+  <body class="pop bg-[#F4F7FF] ">
+    <main class="min-h-screen">
+        <section class="w-[94%] md:max-w-7xl mx-auto py-4">
+
+            <!-- Nav Bar -->
+            <header class="flex justify-between items-center bg-white py-4 px-4 rounded-[16px]">
+                <div class="flex items-center gap-2 cursor-pointer">
+                    <div class="w-[32px] md:w-[45px] ">
+                        <a href="index.html"><img src="assets/logo.png" alt=""></a>
+                    </div>
+                    <h1 class="text-[20px] md:text-[30px]"><a href="index.html">Dev<span class="font-[700]">Board</span></a></h1>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div>
+                        <button id="backDesk" class="px-5 py-2 bg-[#3752FD] text-white font-[500] text-[16px] cursor-pointer hover:bg-blue-800 rounded-[8px] mt-1">
+                            Back to Desk
+                        </button>
+                    </div>
+                    <div id="themeChanger" class="w-[50px] cursor-pointer">
+                        <img class="w-[30px] md:w-[40px]" src="assets/theme-btn.png" alt="">
+                    </div>
+                </div>
+            </header>
+
+            
+        </section>
+    </main>
+    <script src="JS/backDesk.js"></script>
+    <script src="JS/themeChanger.js"></script>
+  </body>
+</html>
