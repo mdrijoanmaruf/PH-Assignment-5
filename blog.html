@@ -27,9 +27,9 @@
                     </div>
                     <h1 class="text-[20px] md:text-[30px]"><a href="index.html">Dev<span class="font-[700]">Board</span></a></h1>
                 </div>
-                <div class="flex items-center gap-4">
+                <div class="flex items-center gap-2 md:gap-4">
                     <div>
-                        <button id="backDesk" class="px-5 py-2 bg-[#3752FD] text-white font-[500] text-[16px] cursor-pointer hover:bg-blue-800 rounded-[8px] mt-1">
+                        <button id="backDesk" class="md:px-5 px-3 py-2 bg-[#3752FD] text-white font-[500] text-[16px] cursor-pointer hover:bg-blue-800 rounded-[8px] mt-1">
                             Back to Desk
                         </button>
                     </div>
@@ -39,7 +39,57 @@
                 </div>
             </header>
 
-            
+            <div>
+                <div>
+                    <h2 class="text-center text-gray-600 text-2xl font-bold opacity-80 my-6">Blogs</h2>
+
+                    <div class="bg-white px-6 py-4 rounded-lg mt-4 flex flex-col gap-4">
+                        <h1 class="text-gray-600 font-[700] text-xl">
+                            Question-1: What are the different ways to select an element in the DOM?
+                        </h1>
+                        <hr class="border-gray-600 border-dashed">
+                        <p class="text-gray-500 text-[16px]">
+                            There are some way to select an element in the DOM using JavaScript, you can use methods like getElementById , getElementsByClassName , getElementsByTagName , querySelector and querySelectorAll . 
+                        </p>
+                    </div>
+                    <div class="bg-white px-6 py-4 rounded-lg mt-4 flex flex-col gap-4">
+                        <h1 class="text-gray-600 font-[700] text-xl">
+                            Question-2: What is the difference between innerHTML, innerText, and textContent ?
+                        </h1>
+                        <hr class="border-gray-600 border-dashed">
+                        <p class="text-gray-500 text-[16px]">
+                            The difference between innerHTML, innerText, and textContent is innerHTML retrieves the complete HTML content within an element, including tags, while innerText returns only the visible text content of an element , and textContent retrieves all the text content within an element, including whitespace and line breaks, regardless of styling or visibility, essentially giving you the raw text without HTML interpretation
+                        </p>
+                    </div>
+                    <div class="bg-white px-6 py-4 rounded-lg mt-4 flex flex-col gap-4">
+                        <h1 class="text-gray-600 font-[700] text-xl">
+                            Question-3: What is event delegation in the DOM?
+                        </h1>
+                        <hr class="border-gray-600 border-dashed">
+                        <p class="text-gray-500 text-[16px]">
+                            Event delegation in the DOM is a JavaScript technique where you attach a single event listener to a parent element, allowing it to handle events triggered on its child elements, instead of adding separate listeners to each child element.
+                        </p>
+                    </div>
+                    <div class="bg-white px-6 py-4 rounded-lg mt-4 flex flex-col gap-4">
+                        <h1 class="text-gray-600 font-[700] text-xl">
+                            Question-4: What is event bubbling in the DOM?
+                        </h1>
+                        <hr class="border-gray-600 border-dashed">
+                        <p class="text-gray-500 text-[16px]">
+                            Event Bubbling is the behavior where when an event occurs on an element, it not only triggers an event handler on that element but also propagates upwards through the DOM hierarchy, triggering event handlers on its parent elements until it reaches the root of the document
+                        </p>
+                    </div>
+                    <div class="bg-white px-6 py-4 rounded-lg my-4 flex flex-col gap-4">
+                        <h1 class="text-gray-600 font-[700] text-xl">
+                            Question-5: How do you create, add, and remove elements using JavaScript?
+                        </h1>
+                        <hr class="border-gray-600 border-dashed">
+                        <p class="text-gray-500 text-[16px]">
+                            I can create new element in JS using document.createElement() and then add it to the DOM with appendChild() or insertBefore(). To remove an element, use removeChild() or parentNode.removeChild() on its parent element.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <script src="JS/backDesk.js"></script>

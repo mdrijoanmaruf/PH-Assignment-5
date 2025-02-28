@@ -72,8 +72,8 @@
                                         <img src="assets/calender.png" alt="">
                                     </div>
                                     <div>
-                                        <p class="text-[#00303C] font-[500] text-[14px] opacity-75">Wed ,</p>
-                                        <h2 class="font-[700] text-[16px]">July 28 2025</h2>
+                                        <p id="todayDay" class="text-[#00303C] font-[500] text-[14px] opacity-75"></p>
+                                        <h2 id="showTodayDate" class="font-[700] text-[16px]"></h2>
                                     </div>
                                 </div>
                             </div>
@@ -246,7 +246,13 @@
 
                             <!-- History -->
                             <div id="history" class="min-h-12">
-                                <!-- <p id="noHistory" class="text-center mt-4 font-semibold text-red-300">No History Available at this time.</p> -->
+
+                            </div>
+                            <div id="">
+                                <p id="noHistory" class="text-center font-semibold text-red-300 -mt-8 mb-[80px]">No History Available at this time.</p>
+                                <p id="removedHistory" class="text-center hidden font-semibold text-green-300 -mt-8 mb-[80px]">
+                                    Cleared All History.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -258,5 +264,6 @@
     <script src="JS/blogPage.js"></script>
     <script src="JS/clearHistory.js"></script>
     <script src="JS/buttonClick.js"></script>
+    <script src="JS/todayDate.js"></script>
   </body>
 </html>

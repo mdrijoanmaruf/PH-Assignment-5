@@ -58,7 +58,8 @@ for (let i = 0; i < allBtn.length; i++) {
         </div>
         `;
 
-    // document.getElementById('noHistory').style.display = 'none';
+    document.getElementById('noHistory').style.display = 'none';
+    document.getElementById('removedHistory').style.display = 'none'
     
     document.getElementById('history').insertAdjacentHTML('afterbegin', history);
   });
