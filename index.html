@@ -1,0 +1,242 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Dev Board</title>
+    <style>
+        .pop{
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+  </head>
+  <body class="pop">
+    <main class="bg-[#F4F7FF] min-h-screen">
+        <section class="w-[94%] md:max-w-7xl mx-auto py-4">
+
+            <!-- Nav Bar -->
+            <header class="flex justify-between items-center bg-white py-4 px-4 rounded-[16px]">
+                <div class="flex items-center gap-2 cursor-pointer">
+                    <div class="w-[32px] md:w-[45px] ">
+                        <a href="index.html"><img src="assets/logo.png" alt=""></a>
+                    </div>
+                    <h1 class="text-[20px] md:text-[30px]"><a href="index.html">Dev<span class="font-[700]">Board</span></a></h1>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center rounded-[32px] p-1 bg-[#F4F7FF] gap-2 px-4 py-2">
+                        <div class="md:w-[28px] w-[20px]">
+                            <img src="assets/checkbox.png" alt="">
+                        </div>
+                        <p class="font-[700] text-[20px] md:text-[28px]">23</p>
+                    </div>
+                    <div class="w-[50px] cursor-pointer">
+                        <img class="w-[30px] md:w-[40px]" src="assets/theme-btn.png" alt="">
+                    </div>
+                </div>
+            </header>
+
+            <!-- Main part -->
+             <section>
+                <div>
+                    <div class="grid grid-cols-4 gap-6  mt-5 ">
+
+                        <!-- Task part -->
+                        <div class="col-span-3 bg-white p-5 rounded-2xl">
+                            <div class="grid grid-cols-4 gap-4">
+                                <div class="flex items-center gap-5 bg-[#F4F7FF] py-4 px-3 rounded-2xl">
+                                    <div class="p-4 rounded-full bg-white">
+                                        <img src="assets/checkbox.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="text-[#00303C] font-[500] text-[14px] opacity-75">Task Assigned</p>
+                                        <h2 class="font-[700] text-[28px]">05</h2>
+                                    </div>
+                                </div>
+
+                                <div class="col-span-2 bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] rounded-2xl flex items-center gap-3 p-3">
+                                    <div>
+                                        <img class="w-13" src="assets/board.png" alt="">
+                                    </div>
+                                    <p class="text-white text-[18px] font-[500]">
+                                        Discover Something <br> New Today!
+                                    </p>
+                                </div>
+
+                                <div class="flex items-center gap-5 bg-[#F4F7FF] py-4 px-3 rounded-2xl">
+                                    <div class="p-4 rounded-full bg-white">
+                                        <img src="assets/calender.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="text-[#00303C] font-[500] text-[14px] opacity-75">Wed ,</p>
+                                        <h2 class="font-[700] text-[16px]">July 28 2025</h2>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 6 task -->
+                             <div class="grid grid-cols-3 gap-6 mt-8">
+                                <div class="bg-[#F4F7FF] rounded-2xl p-4 flex flex-col gap-4">
+                                    <div>
+                                        <p class="inline-block p-1 px-2 bg-white text-[14px] font-[500] opacity-75 rounded-[8px]">ShopEase</p>
+                                    </div>
+                                    <h2 class="text-[22px] font-[500]">
+                                        Fix Mobile Button Issue 
+                                    </h2>
+                                    <p class="p-1 px-2 bg-white text-[14px] font-[400] opacity-75 rounded-[8px] line-clamp-2">
+                                        Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
+                                    </p>
+                                    <hr class="border-dashed border-[1.2px] border-[#3752FD33]">
+                                    <div class="flex justify-between">
+                                        <div>
+                                            <p class="text-[14px] font-[400] opacity-70 text-[#00303C]">Deadline</p>
+                                            <h3 class="text-[16px] font-[500] text-[#00303C]">21 March 2025</h3>
+                                        </div>
+                                        <div>
+                                            <button class="px-5 py-3 bg-[#3752FD] text-white font-[500] text-[16px] rounded-[8px]">
+                                                Completed
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="bg-[#F4F7FF] rounded-2xl p-4 flex flex-col gap-4">
+                                    <div>
+                                        <p class="inline-block p-1 px-2 bg-white text-[14px] font-[500] opacity-75 rounded-[8px]">ShopEase</p>
+                                    </div>
+                                    <h2 class="text-[22px] font-[500]">
+                                        Fix Mobile Button Issue 
+                                    </h2>
+                                    <p class="p-1 px-2 bg-white text-[14px] font-[400] opacity-75 rounded-[8px] line-clamp-2">
+                                        Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
+                                    </p>
+                                    <hr class="border-dashed border-[1.2px] border-[#3752FD33]">
+                                    <div class="flex justify-between">
+                                        <div>
+                                            <p class="text-[14px] font-[400] opacity-70 text-[#00303C]">Deadline</p>
+                                            <h3 class="text-[16px] font-[500] text-[#00303C]">21 March 2025</h3>
+                                        </div>
+                                        <div>
+                                            <button class="px-5 py-3 bg-[#3752FD] text-white font-[500] text-[16px] rounded-[8px]">
+                                                Completed
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-[#F4F7FF] rounded-2xl p-4 flex flex-col gap-4">
+                                    <div>
+                                        <p class="inline-block p-1 px-2 bg-white text-[14px] font-[500] opacity-75 rounded-[8px]">ShopEase</p>
+                                    </div>
+                                    <h2 class="text-[22px] font-[500]">
+                                        Fix Mobile Button Issue 
+                                    </h2>
+                                    <p class="p-1 px-2 bg-white text-[14px] font-[400] opacity-75 rounded-[8px] line-clamp-2">
+                                        Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
+                                    </p>
+                                    <hr class="border-dashed border-[1.2px] border-[#3752FD33]">
+                                    <div class="flex justify-between">
+                                        <div>
+                                            <p class="text-[14px] font-[400] opacity-70 text-[#00303C]">Deadline</p>
+                                            <h3 class="text-[16px] font-[500] text-[#00303C]">21 March 2025</h3>
+                                        </div>
+                                        <div>
+                                            <button class="px-5 py-3 bg-[#3752FD] text-white font-[500] text-[16px] rounded-[8px]">
+                                                Completed
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-[#F4F7FF] rounded-2xl p-4 flex flex-col gap-4">
+                                    <div>
+                                        <p class="inline-block p-1 px-2 bg-white text-[14px] font-[500] opacity-75 rounded-[8px]">ShopEase</p>
+                                    </div>
+                                    <h2 class="text-[22px] font-[500]">
+                                        Fix Mobile Button Issue 
+                                    </h2>
+                                    <p class="p-1 px-2 bg-white text-[14px] font-[400] opacity-75 rounded-[8px] line-clamp-2">
+                                        Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
+                                    </p>
+                                    <hr class="border-dashed border-[1.2px] border-[#3752FD33]">
+                                    <div class="flex justify-between">
+                                        <div>
+                                            <p class="text-[14px] font-[400] opacity-70 text-[#00303C]">Deadline</p>
+                                            <h3 class="text-[16px] font-[500] text-[#00303C]">21 March 2025</h3>
+                                        </div>
+                                        <div>
+                                            <button class="px-5 py-3 bg-[#3752FD] text-white font-[500] text-[16px] rounded-[8px]">
+                                                Completed
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-[#F4F7FF] rounded-2xl p-4 flex flex-col gap-4">
+                                    <div>
+                                        <p class="inline-block p-1 px-2 bg-white text-[14px] font-[500] opacity-75 rounded-[8px]">ShopEase</p>
+                                    </div>
+                                    <h2 class="text-[22px] font-[500]">
+                                        Fix Mobile Button Issue 
+                                    </h2>
+                                    <p class="p-1 px-2 bg-white text-[14px] font-[400] opacity-75 rounded-[8px] line-clamp-2">
+                                        Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
+                                    </p>
+                                    <hr class="border-dashed border-[1.2px] border-[#3752FD33]">
+                                    <div class="flex justify-between">
+                                        <div>
+                                            <p class="text-[14px] font-[400] opacity-70 text-[#00303C]">Deadline</p>
+                                            <h3 class="text-[16px] font-[500] text-[#00303C]">21 March 2025</h3>
+                                        </div>
+                                        <div>
+                                            <button class="px-5 py-3 bg-[#3752FD] text-white font-[500] text-[16px] rounded-[8px]">
+                                                Completed
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-[#F4F7FF] rounded-2xl p-4 flex flex-col gap-4">
+                                    <div>
+                                        <p class="inline-block p-1 px-2 bg-white text-[14px] font-[500] opacity-75 rounded-[8px]">ShopEase</p>
+                                    </div>
+                                    <h2 class="text-[22px] font-[500]">
+                                        Fix Mobile Button Issue 
+                                    </h2>
+                                    <p class="p-1 px-2 bg-white text-[14px] font-[400] opacity-75 rounded-[8px] line-clamp-2">
+                                        Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
+                                    </p>
+                                    <hr class="border-dashed border-[1.2px] border-[#3752FD33]">
+                                    <div class="flex justify-between">
+                                        <div>
+                                            <p class="text-[14px] font-[400] opacity-70 text-[#00303C]">Deadline</p>
+                                            <h3 class="text-[16px] font-[500] text-[#00303C]">21 March 2025</h3>
+                                        </div>
+                                        <div>
+                                            <button class="px-5 py-3 bg-[#3752FD] text-white font-[500] text-[16px] rounded-[8px]">
+                                                Completed
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                             </div>
+                        </div>
+
+                        <!-- Activity Log -->
+                        <div class="bg-white">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, sapiente? Dolores quod doloremque adipisci exercitationem ipsa ipsam dolorum voluptatibus amet sed sint qui repellat, vel, expedita minima veritatis aliquid possimus?
+                        </div>
+                    </div>
+                </div>
+             </section>
+        </section>
+    </main>
+  </body>
+</html>
