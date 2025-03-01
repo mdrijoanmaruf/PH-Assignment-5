@@ -6,38 +6,35 @@ for (let i = 0; i < allBtn.length; i++) {
     let parent = event.target.parentElement.parentElement.parentElement;
     console.log(parent);
 
-
     let title = parent.querySelector("h2").innerText;
     let company = parent.querySelector("span").innerText;
     let task = parent.querySelector("p").innerText;
     let time = getCurrentTime();
 
-    
     // Task Assigned minus
     let taskAssigned = document.getElementById("taskAssigned").innerText;
     taskAssigned = parseInt(taskAssigned);
     taskAssigned -= 1;
     document.getElementById("taskAssigned").innerText = taskAssigned;
-    
+
     // Total Task +
     let completedTask = document.getElementById("completedTask").innerText;
     completedTask = parseInt(completedTask);
     completedTask += 1;
     document.getElementById("completedTask").innerText = completedTask;
-    
+
     alert(`
         Board Updated Successfully 
         Now Task Remain : ${taskAssigned} 🤲
-        Total Completed task : ${completedTask} 😃`)
+        Total Completed task : ${completedTask} 😃`);
 
-
-    if(taskAssigned == 0){
-        alert(`
+    if (taskAssigned == 0) {
+      alert(`
         Congrats 🥳🥳🥳!!!
         You Have Completed All The Current Task.
         Now Task Remain : ${taskAssigned}
         Total Completed Task : ${completedTask}
-        `)
+        `);
     }
     // Disable Button and Bg color change
     completeBtn.setAttribute("disabled", "true");
@@ -58,10 +55,12 @@ for (let i = 0; i < allBtn.length; i++) {
         </div>
         `;
 
-    document.getElementById('noHistory').style.display = 'none';
-    document.getElementById('removedHistory').style.display = 'none'
-    
-    document.getElementById('history').insertAdjacentHTML('afterbegin', history);
+    document.getElementById("noHistory").style.display = "none";
+    document.getElementById("removedHistory").style.display = "none";
+
+    document
+      .getElementById("history")
+      .insertAdjacentHTML("afterbegin", history);
   });
 }
 
