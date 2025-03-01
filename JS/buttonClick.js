@@ -51,7 +51,7 @@ for (let i = 0; i < allBtn.length; i++) {
             <p class="p-2 rounded-md text-gray-500 text-[14px] bg-white font-[600]">
                 ${task}
             </p>
-            <p class="text-[14px] opacity-60 font-[500]">Time : ${time} PM</p>
+            <p class="text-[14px] text-blue-500 opacity-60 font-[500]">Time : ${time} </p>
         </div>
         `;
 
